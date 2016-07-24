@@ -1,0 +1,6 @@
+#Test with local file
+JAR_NAME=/home/student/workspace/learningHadoop/target/learningHadoop-0.0.1-SNAPSHOT.jar
+MAIN_CLASS=xhyao.hadoop.ch2.LogProcessor
+INPUT_DIR=/home/student/workspace/learningHadoop/test-resources/NASA_log_sample.txt
+OUTPUT_DIR=/home/student/workspace/learningHadoop/test-output1/
+hadoop jar $JAR_NAME $MAIN_CLASS -jt=local -fs=file:/// $INPUT_DIR $OUTPUT_DIR 1
